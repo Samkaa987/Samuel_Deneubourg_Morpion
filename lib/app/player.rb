@@ -1,7 +1,7 @@
 class Player
 
 	attr_accessor :name , :sign
-	@@signs_array = ["x", "o"]
+	@@signs_array = ["X", "O"]
 
 	def initialize (name)
 
