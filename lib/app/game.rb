@@ -107,62 +107,152 @@ PRÊT ? PARTEZ !
 
 
 	  if choosen_action == "A1"
-	  	@board.array_board_cases[0][0].value = @current_player.sign
+	  	if @board.array_board_cases[0][0].value == "X" || @board.array_board_cases[0][0].value == "O"
+	  		puts "CETTE CASE EST DÉJÀ PRISE ! VEUILLEZ RÉESSAYER !"
+	  		choosen_action = choose_action
+	  		choosen_action_result(choosen_action)
+	  	else @board.array_board_cases[0][0].value = @current_player.sign	
+	  	end
 
 	  elsif choosen_action == "a1"
-	  	@board.array_board_cases[0][0].value = @current_player.sign
+	  	if @board.array_board_cases[0][0].value == "X" || @board.array_board_cases[0][0].value == "O"
+	  		puts "CETTE CASE EST DÉJÀ PRISE ! VEUILLEZ RÉESSAYER !"
+	  		choosen_action = choose_action
+	  		choosen_action_result(choosen_action)
+	  	else @board.array_board_cases[0][0].value = @current_player.sign
+	  	end
 	  	
 	  elsif choosen_action == "A2"
-	  	@board.array_board_cases[0][1].value = @current_player.sign
+	  	if @board.array_board_cases[0][1].value == "X" || @board.array_board_cases[0][1].value == "O"
+	  		puts "CETTE CASE EST DÉJÀ PRISE ! VEUILLEZ RÉESSAYER !"
+	  		choosen_action = choose_action
+	  		choosen_action_result(choosen_action)
+	  	else @board.array_board_cases[0][1].value = @current_player.sign
+	  	end
 		
 	  elsif choosen_action == "a2"
-	  	@board.array_board_cases[0][1].value = @current_player.sign
+	  	if @board.array_board_cases[0][1].value == "X" || @board.array_board_cases[0][1].value == "O"
+	  		puts "CETTE CASE EST DÉJÀ PRISE ! VEUILLEZ RÉESSAYER !"
+	  		choosen_action = choose_action
+	  		choosen_action_result(choosen_action)
+	  	else @board.array_board_cases[0][1].value = @current_player.sign	  		
+	  	end
 			  	
 	  elsif choosen_action == "A3"
-	  	@board.array_board_cases[0][2].value = @current_player.sign
+	  	if @board.array_board_cases[0][2].value == "X" || @board.array_board_cases[0][2].value == "O"
+	  		puts "CETTE CASE EST DÉJÀ PRISE ! VEUILLEZ RÉESSAYER !"
+	  		choosen_action = choose_action
+	  		choosen_action_result(choosen_action)
+	  	else @board.array_board_cases[0][2].value = @current_player.sign  		
+	  	end
 		
 	  elsif choosen_action == "a3"
-	  	@board.array_board_cases[0][2].value = @current_player.sign
+	  	if @board.array_board_cases[0][2].value == "X" || @board.array_board_cases[0][2].value == "O"
+	  		puts "CETTE CASE EST DÉJÀ PRISE ! VEUILLEZ RÉESSAYER !"
+	  		choosen_action = choose_action
+	  		choosen_action_result(choosen_action)
+	  	else @board.array_board_cases[0][2].value = @current_player.sign	  		
+	  	end
 		
 	  elsif choosen_action == "B1"
-	  	@board.array_board_cases[1][0].value = @current_player.sign
+	  	if @board.array_board_cases[1][0].value == "X" || @board.array_board_cases[1][0].value == "O"
+	  		puts "CETTE CASE EST DÉJÀ PRISE ! VEUILLEZ RÉESSAYER !"
+	  		choosen_action = choose_action
+	  		choosen_action_result(choosen_action)
+	  	else @board.array_board_cases[1][0].value = @current_player.sign	  		
+	  	end
 		
 	  elsif choosen_action == "b1"
-	  	@board.array_board_cases[1][0].value = @current_player.sign
+	  	if @board.array_board_cases[1][0].value == "X" || @board.array_board_cases[1][0].value == "O"
+	  		puts "CETTE CASE EST DÉJÀ PRISE ! VEUILLEZ RÉESSAYER !"
+	  		choosen_action = choose_action
+	  		choosen_action_result(choosen_action)
+	  	else @board.array_board_cases[1][0].value = @current_player.sign	  		
+	  	end
 		
 	  elsif choosen_action == "B2"
-	  	@board.array_board_cases[1][1].value = @current_player.sign
+	  	if @board.array_board_cases[1][1].value == "X" || @board.array_board_cases[1][1].value == "O"
+	  		puts "CETTE CASE EST DÉJÀ PRISE ! VEUILLEZ RÉESSAYER !"
+	  		choosen_action = choose_action
+	  		choosen_action_result(choosen_action)
+	  	else @board.array_board_cases[1][1].value = @current_player.sign	  		
+	  	end
 		
 	  elsif choosen_action == "b2"
-	  	@board.array_board_cases[1][1].value = @current_player.sign
+	  	if @board.array_board_cases[1][1].value == "X" || @board.array_board_cases[1][1].value == "O"
+	  		puts "CETTE CASE EST DÉJÀ PRISE ! VEUILLEZ RÉESSAYER !"
+	  		choosen_action = choose_action
+	  		choosen_action_result(choosen_action)
+	  	else @board.array_board_cases[1][1].value = @current_player.sign	  		
+	  	end
 
 	  elsif choosen_action == "B3"
-	  	@board.array_board_cases[1][2].value = @current_player.sign
+	  	if @board.array_board_cases[1][2].value == "X" || @board.array_board_cases[1][2].value == "O"
+	  		puts "CETTE CASE EST DÉJÀ PRISE ! VEUILLEZ RÉESSAYER !"
+	  		choosen_action = choose_action
+	  		choosen_action_result(choosen_action)
+	  	else @board.array_board_cases[1][2].value = @current_player.sign	  		
+	  	end
 
 	  elsif choosen_action == "b3"
-	  	@board.array_board_cases[1][2].value = @current_player.sign
+	  	if @board.array_board_cases[1][2].value == "X" || @board.array_board_cases[1][2].value == "O"
+	  		puts "CETTE CASE EST DÉJÀ PRISE ! VEUILLEZ RÉESSAYER !"
+	  		choosen_action = choose_action
+	  		choosen_action_result(choosen_action)
+	  	else @board.array_board_cases[1][2].value = @current_player.sign	  		
+	  	end
 
 	  elsif choosen_action == "C1"
-	  	@board.array_board_cases[2][0].value = @current_player.sign
+	  	if @board.array_board_cases[2][0].value == "X" || @board.array_board_cases[2][0].value == "O"
+	  		puts "CETTE CASE EST DÉJÀ PRISE ! VEUILLEZ RÉESSAYER !"
+	  		choosen_action = choose_action
+	  		choosen_action_result(choosen_action)
+	  	else @board.array_board_cases[2][0].value = @current_player.sign	  		
+	  	end
 
 	  elsif choosen_action == "c1"
-	  	@board.array_board_cases[2][0].value = @current_player.sign
+	  	if @board.array_board_cases[2][0].value == "X" || @board.array_board_cases[2][0].value == "O"
+	  		puts "CETTE CASE EST DÉJÀ PRISE ! VEUILLEZ RÉESSAYER !"
+	  		choosen_action = choose_action
+	  		choosen_action_result(choosen_action)
+	  	else @board.array_board_cases[2][0].value = @current_player.sign	  		
+	  	end
 
 	  elsif choosen_action == "C2"
-	  	@board.array_board_cases[2][1].value = @current_player.sign
+	  	if @board.array_board_cases[2][1].value == "X" || @board.array_board_cases[2][1].value == "O"
+	  		puts "CETTE CASE EST DÉJÀ PRISE ! VEUILLEZ RÉESSAYER !"
+	  		choosen_action = choose_action
+	  		choosen_action_result(choosen_action)
+	  	else @board.array_board_cases[2][1].value = @current_player.sign	  		
+	  	end
 
 	  elsif choosen_action == "c2"
-	  	@board.array_board_cases[2][1].value = @current_player.sign
+	  	if @board.array_board_cases[2][1].value == "X" || @board.array_board_cases[2][1].value == "O"
+	  		puts "CETTE CASE EST DÉJÀ PRISE ! VEUILLEZ RÉESSAYER !"
+	  		choosen_action = choose_action
+	  		choosen_action_result(choosen_action)
+	  	else @board.array_board_cases[2][1].value = @current_player.sign	
+	  	end
 
 	  elsif choosen_action == "C3"
-	  	@board.array_board_cases[2][2].value = @current_player.sign
+	  	if @board.array_board_cases[2][2].value == "X" || @board.array_board_cases[2][2].value == "O"
+	  		puts "CETTE CASE EST DÉJÀ PRISE ! VEUILLEZ RÉESSAYER !"
+	  		choosen_action = choose_action
+	  		choosen_action_result(choosen_action)
+	  	else @board.array_board_cases[2][2].value = @current_player.sign	  		
+	  	end
 
 	  elsif choosen_action == "c3"
-	  	@board.array_board_cases[2][2].value = @current_player.sign
+	  	if @board.array_board_cases[2][2].value == "X" || @board.array_board_cases[2][2].value == "O"
+	  		puts "CETTE CASE EST DÉJÀ PRISE ! VEUILLEZ RÉESSAYER !"
+	  		choosen_action = choose_action
+	  		choosen_action_result(choosen_action)
+	  	else @board.array_board_cases[2][2].value = @current_player.sign	  		
+	  	end
 
 	  else puts "CETTE POSITION EST INEXISTANTE."
-	  	choose_action
-	  	choosen_action_result
+	  	choosen_action = choose_action
+	  	choosen_action_result(choosen_action)
 	  	
 	  end
 
@@ -256,7 +346,7 @@ PRÊT ? PARTEZ !
 
 		puts "--------------------------------------------------------------------------------------"
 		puts " "
-    	puts "#{@current_player.name} a gagné la partie ! Félicitation !"
+    	puts "Le joueur #{@current_player.name} a gagné la partie ! Félicitation !"
                                                                           
 	end
 
