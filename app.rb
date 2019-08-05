@@ -7,4 +7,6 @@ require_relative 'lib/app/board'
 require_relative 'lib/app/board_case'
 require_relative 'lib/view/show'
 
-my_game = Game.new
+my_game = Game.new 
+
+#a
